@@ -20,7 +20,7 @@ const themeConfig = {
         link: '/指南/01.介绍',
       },{
         text: '学习',
-        link: '/学习/01.章节1/01.章节1-1',
+        link: '/学习/01.assets静态资源/001.styles.md',
       },
       
   ],
