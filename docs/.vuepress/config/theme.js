@@ -3,12 +3,7 @@ const utilsRoot = path.join(__dirname, '..', '..','..', 'utils/modules');
 const docsRoot = path.join(__dirname,'..', '..');
 const readFile = require(utilsRoot + '/readFile');
 
-const 学习 = readFile(docsRoot + '/学习');
-const 指南 = [{
-    title: '基础',
-    collapsable: false,
-    children: readFile(docsRoot + '/指南')
-}]
+const 指南 = readFile(docsRoot + '/指南');
 
 
 const themeConfig = {
@@ -17,17 +12,12 @@ const themeConfig = {
   lastUpdated: '最后更新时间',
   nav: [{
         text: '指南',
-        link: '/指南/01.介绍',
-      },{
-        text: '学习',
-        link: '/学习/01.assets静态资源/001.styles.md',
-      },
-      
+        link: '/指南/10.基础/01.介绍',
+      }
   ],
   
   sidebar: {
     '/指南/': 指南,
-    '/学习/': 学习,
   },
 };
 
